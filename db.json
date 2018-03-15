@@ -5,7 +5,7 @@
       "name": "test"
     }
   ],
-  "profile": {
+  "profile":  {
     "key": "example-add-on",
     "name": "Example Add-on",
     "description": "An example add-on for Bitbucket",
@@ -69,11 +69,8 @@
       ]
     },
     "scopes": [
-      "account",
-      "repository"
-    ],
-    "contexts": [
-      "account"
+      "READ",
+      "WRITE"
     ]
   }
 }
