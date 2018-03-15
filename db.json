@@ -22,48 +22,13 @@
       "uninstalled": "/uninstalled"
     },
     "modules": {
-      "oauthConsumer": {
-        "clientId": "your_consumer_key"
-      },
-      "webhooks": [
-        {
-          "event": "*",
-          "url": "/webhook"
-        }
-      ],
-      "webItem": [
-        {
-          "url": "http://example.com?repoPath={repo_path}",
-          "name": {
-            "value": "Example Web Item"
-          },
-          "location": "org.bitbucket.repository.navigation",
-          "key": "example-web-item",
-          "params": {
-            "auiIcon": "aui-iconfont-link"
-          }
-        }
-      ],
-      "repoPage": [
-        {
-          "url": "/connect-example?repoPath={repo_path}",
-          "name": {
-            "value": "Example Page"
-          },
-          "location": "org.bitbucket.repository.navigation",
-          "key": "example-repo-page",
-          "params": {
-            "auiIcon": "aui-iconfont-doc"
-          }
-        }
-      ],
       "webPanel": [
         {
           "url": "/connect-example?repoPath={repo_path}",
           "name": {
             "value": "Example Web Panel"
           },
-          "location": "org.bitbucket.repository.overview.informationPanel",
+          "location": "atl.jira.view.issue.right.context",
           "key": "example-web-panel"
         }
       ]
