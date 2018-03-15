@@ -7,7 +7,7 @@
   ],
   "profile":  {
   "key": "atms-jira-plugin",
-  "baseUrl": "https://c3d87851.ngrok.io",
+  "baseUrl": "https://390b09ba.ngrok.io",
   "name": "Atms Jira Plugin (Spring Boot)",
   "authentication": {
     "type": "jwt"
