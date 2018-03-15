@@ -1,5 +1,12 @@
 {
   "posts": 
+    [
+      {
+        "id": 1,
+        "name": "test"
+      }
+    ],
+  "profile": 
     {
       "key": "atms-jira-plugin",
       "baseUrl": "https://37107387.ngrok.io/atlassian-connect.json",
@@ -27,9 +34,5 @@
         "READ",
         "WRITE"
       ]
-    }
-  ,
-  "profile": {
-    "name": "typicode"
-  }
+    }  
 }
