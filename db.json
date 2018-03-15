@@ -28,6 +28,6 @@
        }
     ]
  },
-  "scopes": ["READ", "WRITE"]
+  "scopes": ["READ", "WRITE", "ACT_AS_USER"]
   }
 }
