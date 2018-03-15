@@ -1,5 +1,6 @@
 
-    {
+{ "json"  :  
+{
   "key": "atms-jira-plugin",
   "baseUrl": "https://37107387.ngrok.io/atlassian-connect.json",
   "name": "Atms Jira Plugin (Spring Boot)",
@@ -23,5 +24,6 @@
     ]
  },
   "scopes": ["READ", "WRITE"]
+}
 }
   
