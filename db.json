@@ -1,38 +1,79 @@
 {
-  "posts": 
-    [
-      {
-        "id": 1,
-        "name": "test"
-      }
-    ],
-  "profile": 
+  "posts": [
     {
-      "key": "atms-jira-plugin",
-      "baseUrl": "https://ad68dbcb.ngrok.io",
-      "name": "Atms Jira Plugin (Spring Boot)",
-      "authentication": {
-        "type": "jwt"
+      "id": 1,
+      "name": "test"
+    }
+  ],
+  "profile": {
+    "key": "example-add-on",
+    "name": "Example Add-on",
+    "description": "An example add-on for Bitbucket",
+    "vendor": {
+      "name": "Angry Nerds",
+      "url": "https://www.atlassian.com/angrynerds"
+    },
+    "baseUrl": "https://c652c18b.ngrok.io",
+    "authentication": {
+      "type": "jwt"
+    },
+    "lifecycle": {
+      "installed": "/installed",
+      "uninstalled": "/uninstalled"
+    },
+    "modules": {
+      "oauthConsumer": {
+        "clientId": "your_consumer_key"
       },
-      "lifecycle": {
-        "installed": "/installed",
-        "uninstalled": "/uninstalled"
-      },
-      "modules": {
-        "webPanels": [
-          {
-            "url": "/index.html",
-            "key": "my-general-page",
-            "location": "atl.jira.view.issue.right.context",
-            "name": {
-              "value": "CLICK THIS THING!"
-            }
+      "webhooks": [
+        {
+          "event": "*",
+          "url": "/webhook"
+        }
+      ],
+      "webItem": [
+        {
+          "url": "http://example.com?repoPath={repo_path}",
+          "name": {
+            "value": "Example Web Item"
+          },
+          "location": "org.bitbucket.repository.navigation",
+          "key": "example-web-item",
+          "params": {
+            "auiIcon": "aui-iconfont-link"
           }
-        ]
-      },
-      "scopes": [
-        "READ",
-        "WRITE"
+        }
+      ],
+      "repoPage": [
+        {
+          "url": "/connect-example?repoPath={repo_path}",
+          "name": {
+            "value": "Example Page"
+          },
+          "location": "org.bitbucket.repository.navigation",
+          "key": "example-repo-page",
+          "params": {
+            "auiIcon": "aui-iconfont-doc"
+          }
+        }
+      ],
+      "webPanel": [
+        {
+          "url": "/connect-example?repoPath={repo_path}",
+          "name": {
+            "value": "Example Web Panel"
+          },
+          "location": "org.bitbucket.repository.overview.informationPanel",
+          "key": "example-web-panel"
+        }
       ]
-    }  
+    },
+    "scopes": [
+      "account",
+      "repository"
+    ],
+    "contexts": [
+      "account"
+    ]
+  }
 }
