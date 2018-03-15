@@ -1,5 +1,4 @@
-{
-  "posts": [
+
     {
   "key": "atms-jira-plugin",
   "baseUrl": "https://37107387.ngrok.io/atlassian-connect.json",
@@ -25,8 +24,4 @@
  },
   "scopes": ["READ", "WRITE"]
 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+  
