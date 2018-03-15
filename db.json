@@ -1,0 +1,35 @@
+{
+  "posts": 
+    {
+      "key": "atms-jira-plugin",
+      "baseUrl": "https://37107387.ngrok.io/atlassian-connect.json",
+      "name": "Atms Jira Plugin (Spring Boot)",
+      "authentication": {
+        "type": "jwt"
+      },
+      "lifecycle": {
+        "installed": "/installed",
+        "uninstalled": "/uninstalled"
+      },
+      "modules": {
+        "webPanels": [
+          {
+            "url": "/index.html",
+            "key": "my-general-page",
+            "location": "atl.jira.view.issue.right.context",
+            "name": {
+              "value": "CLICK THIS THING!"
+            }
+          }
+        ]
+      },
+      "scopes": [
+        "READ",
+        "WRITE"
+      ]
+    }
+  ,
+  "profile": {
+    "name": "typicode"
+  }
+}
