@@ -9,7 +9,7 @@
   "profile": 
     {
       "key": "atms-jira-plugin",
-      "baseUrl": "https://37107387.ngrok.io/atlassian-connect.json",
+      "baseUrl": "https://37107387.ngrok.io",
       "name": "Atms Jira Plugin (Spring Boot)",
       "authentication": {
         "type": "jwt"
