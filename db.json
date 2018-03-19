@@ -9,7 +9,7 @@
   "name": "Spring Boot Lightning Demo",
   "description": "Doesn't do heaps",
   "key": "atlassian-connect-spring-boot-sample-gradle",
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "https://7755c069.ngrok.io",
   "vendor": {
     "name": "Atlassian",
     "url": "http://www.atlassian.com"
