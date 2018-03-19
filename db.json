@@ -6,9 +6,14 @@
     }
   ],
   "profile":  {
-  "key": "atms-jira-plugin",
-  "baseUrl": "https://390b09ba.ngrok.io",
-  "name": "Atms Jira Plugin (Spring Boot)",
+  "name": "Spring Boot Lightning Demo",
+  "description": "Doesn't do heaps",
+  "key": "atlassian-connect-spring-boot-sample-gradle",
+  "baseUrl": "http://localhost:8080",
+  "vendor": {
+    "name": "Atlassian",
+    "url": "http://www.atlassian.com"
+  },
   "authentication": {
     "type": "jwt"
   },
@@ -16,18 +21,28 @@
     "installed": "/installed",
     "uninstalled": "/uninstalled"
   },
-  "modules":{
-    "webPanels":[
-       {
-        "url":"/index",
-        "key":"my-general-page",
-        "location":"atl.jira.view.issue.right.context",
-        "name":{
-           "value":"CLICK THIS THING!"
+  "apiVersion": 1,
+  "scopes": [
+    "read"
+  ],
+  "modules": {
+    "webItems": [
+      {
+        "url": "/show?contentId={content.id}",
+        "location": "system.content.action",
+        "context": "addon",
+        "target": {
+          "type": "page"
+        },
+        "tooltip": {
+          "value": "Show as JSON"
+        },
+        "key": "lightning-to-json",
+        "name": {
+          "value": "Show as JSON"
         }
-       }
+      }
     ]
- },
-  "scopes": ["READ", "WRITE", "ACT_AS_USER"]
   }
+}
 }
